@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ADSpare"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "AD SDK"
 
   # This description is used to generate tags and improve search results.
@@ -120,7 +120,7 @@ Pod::Spec.new do |spec|
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
-  #spec.vendored_libraries = 'libAdCompViewSDK.a'
+  spec.vendored_libraries = 'libAdCompViewSDK.a'
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -129,7 +129,7 @@ Pod::Spec.new do |spec|
   #  you can include multiple dependencies to ensure it works.
 
   spec.requires_arc = true
-  #spec.vendored_framework = "libAdCompViewSDK"
+  # spec.vendored_framework = "libAdCompViewSDK"
   spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
